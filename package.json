@@ -1,0 +1,20 @@
+{
+  "name": "@udkyo-test-org/permission-test",
+  "version": "0.0.1",
+  "description": "Dummy package for testing GitHub package publishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udkyo-test-org/permission-test.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": ["test", "dummy"],
+  "author": "",
+  "license": "MIT"
+}
+
