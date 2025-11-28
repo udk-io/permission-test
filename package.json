@@ -1,5 +1,5 @@
 {
-  "name": "@udkyo-test-org/permission-test",
+  "name": "@udk-io/permission-test",
   "version": "0.0.1",
   "description": "Dummy package for testing GitHub package publishing",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udkyo-test-org/permission-test.git"
+    "url": "git+https://github.com/udk-io/permission-test.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

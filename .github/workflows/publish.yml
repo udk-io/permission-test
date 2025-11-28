@@ -1,6 +1,10 @@
 name: Publish Package
 
 on:
+  # Daily scheduled run at 3:40pm GMT
+  schedule:
+    - cron: '40 15 * * *'
+
   # Manual trigger from GitHub UI
   workflow_dispatch:
     inputs:
@@ -41,10 +45,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Bump version (manual trigger only)
-        if: github.event_name == 'workflow_dispatch'
+      - name: Bump version
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
         run: |
-          npm version ${{ inputs.version_bump }} -m "Bump version to %s"
+          # Use input for manual trigger, default to patch for scheduled runs
+          BUMP_TYPE="${{ inputs.version_bump || 'patch' }}"
+          npm version $BUMP_TYPE -m "Bump version to %s"
           git push
           git push --tags
 
