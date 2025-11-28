@@ -1,6 +1,6 @@
 {
   "name": "@udk-io/permission-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dummy package for testing GitHub package publishing",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "keywords": ["test", "dummy"],
+  "keywords": [
+    "test",
+    "dummy"
+  ],
   "author": "",
   "license": "MIT"
 }
-
