@@ -1,6 +1,6 @@
 {
   "name": "@udk-io/permission-test",
-  "version": "0.0.247",
+  "version": "0.0.248",
   "description": "Dummy package for testing GitHub package publishing",
   "main": "index.js",
   "scripts": {
